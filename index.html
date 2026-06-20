@@ -65,7 +65,7 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-10 lg:py-14 space-y-16">
-      <section class="grid lg:grid-cols-4 gap-2 items-stretch">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
         <div id="about"
           class="glass soft-border col-span-3 rounded-3xl p-8 lg:p-10 shadow-[0_10px_30px_rgba(15,23,42,0.06)]">
           <p class="text-[11px] uppercase tracking-[0.3em] text-slate-500 mb-4">Architecting Systems</p>
@@ -95,14 +95,9 @@
             <span class="px-3 py-2 rounded-full bg-slate-100 text-slate-700">Individual Contributor</span>
           </div>
         </div>
-
-        <div id="skills" class="glass soft-border rounded-3xl p-6 lg:p-8 shadow-[0_10px_30px_rgba(15,23,42,0.06)]">
-          <div class="flex items-end justify-between gap-3 mb-4">
-            <div>
-              <p class="text-[11px] uppercase tracking-[0.3em] text-slate-500">Technical expertise</p>
-              <h2 class="text-2xl font-semibold text-slate-950">Skills & Tools</h2>
-            </div>
-          </div>
+        <div>
+          <p class="text-[11px] uppercase tracking-[0.3em] text-slate-500">Expertise</p>
+          <h2 class="text-3xl font-semibold text-slate-950">Technical skills</h2>
           <div class="grid grid-cols-1 sm:grid-cols-1 gap-3">
             <div class="rounded-2xl bg-white soft-border p-4">
               <p class="text-xs uppercase tracking-[0.24em] text-slate-500">Backend</p>
@@ -120,11 +115,6 @@
                 Keras, QML</p>
             </div>
             <div class="rounded-2xl bg-white soft-border p-4">
-              <p class="text-xs uppercase tracking-[0.24em] text-slate-500">Architecture</p>
-              <p class="mt-3 text-sm text-slate-700 leading-6">Supergraph, Kappa, Hub & Spoke, Composable Frontends, P2P
-                etc. </p>
-            </div>
-            <div class="rounded-2xl bg-white soft-border p-4">
               <p class="text-xs uppercase tracking-[0.24em] text-slate-500">DevOps</p>
               <p class="mt-3 text-sm text-slate-700 leading-6">Ansible, Salt, Git, Kubernetes, Elastic</p>
             </div>
@@ -137,6 +127,28 @@
         </div>
       </section>
 
+      <section id="skills" class="space-y-5">
+
+        <div class="w-full h-[300px]">
+          <canvas id="skillsRadar"></canvas>
+        </div>
+      </section>
+      <!-- Include the library. -->
+      <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+      <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+      <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+      <!-- Prepare a container for your calendar. -->
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+
+      <script>
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "laluali", { responsive: true });
+      </script>
       <section id="experience" class="space-y-5">
         <div class="flex items-end justify-between gap-4">
           <div>
@@ -151,50 +163,50 @@
               <article class="rounded-2xl bg-slate-950 text-white p-4">
                 <p class="text-xs text-slate-300">2022 - Present</p>
                 <h3 class="mt-1 font-semibold"> Consumer Excellence - Henkel Dx </h3>
-                <p class="mt-2 text-sm text-slate-300"> Staff Software Engineer / Tech Product Owner </p>
+                <p class="mt-2 text-sm text-slate-300 font-bold"> Staff Software Engineer / Tech Product Owner </p>
                 <p class="text-sm text-slate-300"> Data Governance framework, Digital Twin AR-VR, QML and Quantum
                   Algorithmic functions. </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2019 - 2022</p>
                 <h3 class="mt-1 font-semibold text-slate-950"> Banking, BioMedical - Netcentric - Cognizant </h3>
-                <p class="mt-2 text-sm muted">Lead Software Engineer</p>
+                <p class="mt-2 text-sm font-bold">Lead Software Engineer</p>
                 <p class="text-sm muted"> Agentic AI, Multi Site, Tenant and Content Management system development</p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2018 - 2019</p>
                 <h3 class="mt-1 font-semibold text-slate-950"> Fintech Startup - Accenture Ltd </h3>
-                <p class="mt-2 text-sm muted">SDE 3</p>
+                <p class="mt-2 text-sm font-bold">SDE 3</p>
                 <p class="text-sm muted"> AI-driven experiences, BigData and OpenTelemetry. </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2016 - 2018</p>
                 <h3 class="mt-1 font-semibold text-slate-950"> Fintech Startup - Mphasis Ltd </h3>
-                <p class="mt-2 text-sm muted">SDE 2</p>
+                <p class="mt-2 text-sm font-bold">SDE 2</p>
                 <p class="text-sm muted"> Payment gateway integration and aggregators systems. </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2014 - 2016</p>
                 <h3 class="mt-1 font-semibold text-slate-950"> Telecommunication (TechMahindra Ltd)</h3>
-                <p class="mt-2 text-sm muted">SDE 2</p>
+                <p class="mt-2 text-sm font-bold">SDE 2</p>
                 <p class="text-sm muted"> Apache Kafka, GraphQL, REST, gRPC, TDD, NodeJS, Oracle - PL-SQL. </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2012 - 2014</p>
                 <h3 class="mt-1 font-semibold text-slate-950"> TechMahindra Ltd </h3>
-                <p class="mt-2 text-sm muted">Software Engineer</p>
+                <p class="mt-2 text-sm font-bold">Software Engineer</p>
                 <p class="text-sm muted"> CMS, IAM, Apache Cordova Apps. </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2009 - 2012</p>
-                <h3 class="mt-1 font-semibold text-slate-950">B. Engg</h3>
-                <p class="mt-2 text-sm muted">University of Mumbai</p>
+                <h3 class="mt-1 font-semibold text-slate-950">University of Mumbai</h3>
+                <p class="mt-2 text-sm font-bold">B. Engg</p>
                 <p class="text-sm muted"> Electronics & Telecommunication, First Class </p>
               </article>
               <article class="rounded-2xl bg-white soft-border p-4">
                 <p class="text-xs text-slate-500">2006 - 2009</p>
-                <h3 class="mt-1 font-semibold text-slate-950">D. Engg</h3>
-                <p class="mt-2 text-sm muted">Maharashtra State Board of Technical Education</p>
+                <h3 class="mt-1 font-semibold text-slate-950">Maharashtra State Board of Technical Education</h3>
+                <p class="mt-2 text-sm font-bold">D. Engg</p>
                 <p class="text-sm muted">Digital Electronics, First Class Distinction</p>
               </article>
             </div>
